@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cqi-R7-EaM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="k1O-k0-wCE">
+            <objects>
+                <viewController id="jPL-Ti-pDe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9bx-kR-COW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jJ6-Gy-bx5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="eYi-ce-3vi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4k-oq-xSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="365"/>
+        </scene>
+        <!--Perfect Lab1-->
+        <scene sceneID="UFC-tF-WwI">
+            <objects>
+                <viewController id="KEd-m9-gmh" customClass="ViewController" customModule="MobiDev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="luW-0W-eyp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Роман Олександр Група ІО-82 ЗК ІО-8219" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpv-t4-Az1">
+                                <rect key="frame" x="135" y="417.5" width="144" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OVg-zH-yuT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hpv-t4-Az1" firstAttribute="centerX" secondItem="luW-0W-eyp" secondAttribute="centerX" id="3db-Nl-GMV"/>
+                            <constraint firstItem="hpv-t4-Az1" firstAttribute="centerY" secondItem="luW-0W-eyp" secondAttribute="centerY" id="CFd-Vo-3tz"/>
+                            <constraint firstItem="hpv-t4-Az1" firstAttribute="centerX" secondItem="luW-0W-eyp" secondAttribute="centerX" id="MGC-4j-QwY"/>
+                            <constraint firstItem="hpv-t4-Az1" firstAttribute="centerY" secondItem="luW-0W-eyp" secondAttribute="centerY" id="QLZ-OE-Ui1"/>
+                            <constraint firstItem="hpv-t4-Az1" firstAttribute="centerX" secondItem="luW-0W-eyp" secondAttribute="centerX" id="V0P-Ph-D7E"/>
+                            <constraint firstItem="hpv-t4-Az1" firstAttribute="centerY" secondItem="luW-0W-eyp" secondAttribute="centerY" id="ahS-Tc-xXp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Perfect Lab1" image="graduationcap" catalog="system" id="xqM-qj-rXR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1QC-fE-bfH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="-240"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6W7-PM-JUH">
+            <objects>
+                <tabBarController id="cqi-R7-EaM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xTD-Hi-Ceo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KEd-m9-gmh" kind="relationship" relationship="viewControllers" id="QeN-dE-YzR"/>
+                        <segue destination="jPL-Ti-pDe" kind="relationship" relationship="viewControllers" id="5Xs-Ow-Dt6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GWI-ff-g63" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="graduationcap" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
